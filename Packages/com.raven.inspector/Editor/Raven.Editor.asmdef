@@ -1,0 +1,18 @@
+{
+    "name": "Raven.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:25f75d542f780d148af7eaa92441fada"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
