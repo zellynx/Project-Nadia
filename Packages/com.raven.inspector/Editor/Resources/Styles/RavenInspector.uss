@@ -1,0 +1,42 @@
+﻿.raven-root
+{
+    padding-left: 4px;
+    padding-right: 4px;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.raven-group
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.raven-collection
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.raven-button
+{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.raven-validation-error
+{
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+.raven-row
+{
+    flex-direction: row;
+}
+
+.raven-flex-grow
+{
+    flex-grow: 1;
+}
