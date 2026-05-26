@@ -15,6 +15,18 @@ namespace Core
     
     public class RavenTestComponent : MonoBehaviour
     {
+        [HorizontalGroup("TopRow")]
+        public int Gold;
+
+        [HorizontalGroup("TopRow")]
+        public int Gems;
+        
+        [FoldoutGroup("Combat")]
+        public int Damage;
+
+        [FoldoutGroup("Combat")]
+        public int Armor;
+        
         [Tab("Stats")]
         public int Health;
 

@@ -11,148 +11,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="125e6ef2-0989-42f1-8fb7-71421449e865" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Conditions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Conditions/Evaluators.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Conditions/Evaluators/RavenConditionEvaluator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Conditions/Evaluators/RavenConditionEvaluator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Conditions/Metadata.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Actions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Actions/ButtonDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Actions/ButtonDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Collection.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Collection/CollectionDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Collection/CollectionDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Decorator.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Decorator/ValidationDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Decorator/ValidationDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Group.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Group/GroupDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Group/GroupDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Layout.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Layout/TabDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Layout/TabDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Object.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Object/ObjectDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Object/ObjectDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Primitive.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Primitive/PrimitiveDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Primitive/PrimitiveDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/State.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/State/EnableIfDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/State/EnableIfDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/State/ReadOnlyDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/State/ReadOnlyDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/State/ShowIfDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/State/ShowIfDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/Contexts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/Contexts/RavenDrawerContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/Contexts/RavenDrawerContext.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/CustomRavenDrawerAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/CustomRavenDrawerAttribute.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/Interfaces.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/Interfaces/IRavenDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/Interfaces/IRavenDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/RavenDrawerLayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/RavenDrawerLayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/RavenDrawerPhase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/RavenDrawerPhase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/RavenDrawerPipeline.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/RavenDrawerPipeline.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/RavenDrawerResolver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/RavenDrawerResolver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/Registry.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/Registry/RavenDrawerRegistry.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/Registry/RavenDrawerRegistry.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Inspectors.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Inspectors/RavenInspector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Inspectors/RavenInspector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Layout.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Layout/RavenTabRegistry.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Layout/RavenTabRegistry.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/PropertyTree.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Reactive.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Reactive/RavenDependencyRegistry.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Reactive/RavenDependencyRegistry.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Reactive/RavenDependencySubscription.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Reactive/RavenDependencySubscription.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/EnableIfAttributeResolver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/EnableIfAttributeResolver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/GroupAttributeResolver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/GroupAttributeResolver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/ReadOnlyAttributeResolver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/ReadOnlyAttributeResolver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/ShowIfAttributeResolver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/ShowIfAttributeResolver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/TabAttributeResolver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/TabAttributeResolver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/ValidateInputAttributeResolver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/ValidateInputAttributeResolver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/Interfaces.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/Interfaces/IRavenMetadataResolver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/Interfaces/IRavenMetadataResolver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/RavenResolverRegistry.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/RavenResolverRegistry.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/VisualResolvers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resources/Styles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resources/Styles/RavenInspector.uss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resources/Styles/RavenInspector.uss.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/UI/Elements.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/UI/Elements/RavenGroupContainerRegistry.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/UI/Elements/RavenGroupContainerRegistry.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/UI/Styling.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Utility.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Utility/RavenSerializedPropertyUtility.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Utility/RavenSerializedPropertyUtility.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Validation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Validation/RavenValidationResult.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Validation/RavenValidationResult.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Validation/RavenValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Validation/RavenValidator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/ButtonAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/ButtonAttribute.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/EnableIfAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/EnableIfAttribute.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/GroupAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/GroupAttribute.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/ReadOnlyAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/ReadOnlyAttribute.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/ShowIfAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/ShowIfAttribute.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/TabAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/TabAttribute.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/ValidateInputAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/ValidateInputAttribute.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/ButtonMetadata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/ButtonMetadata.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/EnableIfMetadata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/EnableIfMetadata.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/GroupMetadata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/GroupMetadata.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/ReadOnlyMetadata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/ReadOnlyMetadata.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/ShowIfMetadata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/ShowIfMetadata.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/TabMetadata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/TabMetadata.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/ValidateInputMetadata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/ValidateInputMetadata.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Reflection/RavenTypeUtility.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Reflection/RavenTypeUtility.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Layout/FoldoutGroupDrawer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Layout/FoldoutGroupDrawer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Layout/HorizontalGroupDrawer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Layout/HorizontalGroupDrawer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Fields.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Fields/RavenFieldFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Fields/RavenFieldFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Fields/RavenFieldResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Fields/RavenFieldResult.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Layout/RavenFoldoutRegistry.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Layout/RavenFoldoutRegistry.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Layout/RavenHorizontalGroupRegistry.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Layout/RavenHorizontalGroupRegistry.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/FoldoutGroupAttributeResolver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/FoldoutGroupAttributeResolver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/HorizontalGroupAttributeResolver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/HorizontalGroupAttributeResolver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/FoldoutGroupAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/FoldoutGroupAttribute.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/HorizontalGroupAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/HorizontalGroupAttribute.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/FoldoutGroupMetadata.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/FoldoutGroupMetadata.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/HorizontalGroupMetadata.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/HorizontalGroupMetadata.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Nadia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Nadia/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Windows/RavenDebugWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Windows/RavenDebugWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.raven.inspector.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.raven.inspector.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Primitive/PrimitiveDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Primitive/PrimitiveDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/Contexts/RavenDrawerContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/Contexts/RavenDrawerContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/RavenDrawerPipeline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/RavenDrawerPipeline.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/RavenResolverRegistry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/RavenResolverRegistry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resources/Styles/RavenInspector.uss" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resources/Styles/RavenInspector.uss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Core/RavenTestComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Core/RavenTestComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/RavenPropertyMetadata.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/RavenPropertyMetadata.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Properties/Tree/RavenPropertyTreeBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/PropertyTree/RavenPropertyTreeBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Properties/Tree/RavenPropertyTreeBuilder.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Editor/PropertyTree/RavenPropertyTreeBuilder.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Raven.Runtime.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Raven.Runtime.asmdef" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,6 +86,8 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Collection/CollectionDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Decorator/ValidationDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Group/GroupDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Layout/FoldoutGroupDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Layout/HorizontalGroupDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Layout/TabDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Object/ObjectDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/BuiltIn/Primitive/PrimitiveDrawer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -208,12 +102,18 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/RavenDrawerPipeline.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/RavenDrawerResolver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Drawers/Registry/RavenDrawerRegistry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Fields/RavenFieldFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Fields/RavenFieldResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Inspectors/RavenInspector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Layout/RavenFoldoutRegistry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Layout/RavenHorizontalGroupRegistry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Layout/RavenTabRegistry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Reactive/RavenDependencyRegistry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Reactive/RavenDependencySubscription.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/EnableIfAttributeResolver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/FoldoutGroupAttributeResolver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/GroupAttributeResolver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/HorizontalGroupAttributeResolver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/ReadOnlyAttributeResolver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/ShowIfAttributeResolver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Resolvers/AttributeResolvers/TabAttributeResolver.cs" root0="FORCE_HIGHLIGHTING" />
@@ -227,7 +127,9 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Editor/Windows/RavenDebugWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/ButtonAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/EnableIfAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/FoldoutGroupAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/GroupAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/HorizontalGroupAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/ReadOnlyAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/ShowIfAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Attributes/TabAttribute.cs" root0="FORCE_HIGHLIGHTING" />
@@ -235,7 +137,9 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Interfaces/IRavenMetadata.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/ButtonMetadata.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/EnableIfMetadata.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/FoldoutGroupMetadata.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/GroupMetadata.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/HorizontalGroupMetadata.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/RavenPropertyMetadata.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/ReadOnlyMetadata.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.raven.inspector/Runtime/Metadata/Models/ShowIfMetadata.cs" root0="FORCE_HIGHLIGHTING" />
@@ -347,6 +251,7 @@
       <workItem from="1779591539476" duration="3807000" />
       <workItem from="1779595530897" duration="24942000" />
       <workItem from="1779679866849" duration="4115000" />
+      <workItem from="1779747324712" duration="6174000" />
     </task>
     <servers />
   </component>

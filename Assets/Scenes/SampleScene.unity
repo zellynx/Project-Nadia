@@ -476,16 +476,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9471653d76841f3a7cf68a87fa61a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: NewAssembly::Core.RavenTestComponent
+  Gold: 0
+  Gems: 0
+  Damage: 0
+  Armor: 0
   Health: 0
   Mana: 0
   Speed: 0
   AdvancedMode: 0
   Stats:
-    Health: 90
+    Health: 0
     Speed: 0
   AdvancedSpeed: 0
   PlayerName: 
-  Values: 0000000000000000
+  Values: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

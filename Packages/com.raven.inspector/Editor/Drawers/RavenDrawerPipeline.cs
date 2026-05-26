@@ -22,6 +22,10 @@ namespace Editor.Drawers
                 new RavenGroupContainerRegistry();
             var tabs =
                 new RavenTabRegistry();
+            var horizontalGroups =
+                new RavenHorizontalGroupRegistry();
+            var foldouts =
+                new RavenFoldoutRegistry();
             var dependencies =
                 new RavenDependencyRegistry();
 
@@ -31,6 +35,8 @@ namespace Editor.Drawers
                 serializedObject,
                 groups,
                 tabs,
+                horizontalGroups,
+                foldouts,
                 dependencies,
                 target);
         }
@@ -41,14 +47,18 @@ namespace Editor.Drawers
             SerializedObject serializedObject,
             RavenGroupContainerRegistry groups,
             RavenTabRegistry tabs,
+            RavenHorizontalGroupRegistry
+                horizontalGroups,
+            RavenFoldoutRegistry
+                foldouts,
             RavenDependencyRegistry dependencies,
             object target)
         {
-            var renderParent =
-                node.Metadata.RenderContainer
-                ??
+            var initialRenderParent =
                 node.Parent?.Metadata
                     ?.RenderContainer
+                ??
+                node.Metadata.RenderContainer
                 ??
                 root;
 
@@ -56,10 +66,12 @@ namespace Editor.Drawers
             {
                 Node = node,
                 Root = root,
-                RenderParent = renderParent,
+                RenderParent = initialRenderParent,
                 SerializedObject = serializedObject,
                 Groups = groups,
                 Tabs = tabs,
+                HorizontalGroups = horizontalGroups,
+                Foldouts = foldouts,
                 Dependencies = dependencies,
                 Target = target
             };
@@ -86,10 +98,7 @@ namespace Editor.Drawers
             context.RenderParent =
                 node.Metadata.RenderContainer
                 ??
-                node.Parent?.Metadata
-                    ?.RenderContainer
-                ??
-                root;
+                context.RenderParent;
 
             var structuralDrawers =
                 orderedDrawers
@@ -135,6 +144,8 @@ namespace Editor.Drawers
                     serializedObject,
                     groups,
                     tabs,
+                    horizontalGroups,
+                    foldouts,
                     dependencies,
                     target);
             }

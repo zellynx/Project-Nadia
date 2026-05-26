@@ -23,6 +23,10 @@ namespace Editor.Drawers.Contexts
         
         public RavenTabRegistry Tabs;
         
+        public RavenHorizontalGroupRegistry HorizontalGroups;
+        
+        public RavenFoldoutRegistry Foldouts;
+        
         public RavenDependencyRegistry Dependencies;
 
         public object Target;

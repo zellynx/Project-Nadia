@@ -1,7 +1,9 @@
 ﻿using Editor.Drawers.Contexts;
 using Editor.Drawers.Interfaces;
+using Editor.Fields;
 using Metadata.Models;
 using Reflection;
+using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 
@@ -58,14 +60,34 @@ namespace Editor.Drawers.BuiltIn.Primitive
                 return;
             }
 
-            var propertyField =
-                new PropertyField(property);
+            var fieldResult =
+                RavenFieldFactory.Create(
+                    property,
+                    context.Node.Metadata.Name,
+                    () =>
+                    {
+                        context.Dependencies.Notify(
+                            context.Node.Metadata.Name);
+                    });
 
-            propertyField.label =
-                context.Node.Metadata.Name;
+            if (fieldResult == null)
+            {
+                return;
+            }
+
+            var fieldElement = fieldResult.Element;
+
+            fieldResult.RegisterCallbacks?.Invoke();
+
+            if (fieldElement == null)
+            {
+                return;
+            }
+
+            fieldElement.style.flexGrow = 1;
 
             context.CurrentElement =
-                propertyField;
+                fieldElement;
 
             VisualElement targetContainer =
                 context.RenderParent;
@@ -87,14 +109,19 @@ namespace Editor.Drawers.BuiltIn.Primitive
                 }
             }
 
-            targetContainer.Add(propertyField);
+            var wrapper =
+                new VisualElement();
             
-            propertyField.RegisterValueChangeCallback(
-                _ =>
-                {
-                    context.Dependencies.Notify(
-                        context.Node.Metadata.Name);
-                });
+            wrapper.AddToClassList(
+                "raven-horizontal-item");
+
+            wrapper.style.flexGrow = 1;
+
+            wrapper.Add(fieldElement);
+
+            targetContainer.Add(wrapper);
+            
+            
         }
     }
 }

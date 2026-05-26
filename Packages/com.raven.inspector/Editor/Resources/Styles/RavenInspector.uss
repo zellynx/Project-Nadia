@@ -40,3 +40,30 @@
 {
     flex-grow: 1;
 }
+
+.raven-horizontal-group
+{
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.raven-horizontal-item
+{
+    flex-grow: 1;
+}
+
+.raven-horizontal-item .unity-base-field
+{
+    flex-grow: 1;
+}
+
+.raven-horizontal-item .unity-base-field__input
+{
+    flex-grow: 1;
+}
+
+.raven-horizontal-group .unity-base-field__label
+{
+    min-width: auto;
+    width: auto;
+}
