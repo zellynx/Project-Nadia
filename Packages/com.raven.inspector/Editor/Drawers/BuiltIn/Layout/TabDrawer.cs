@@ -1,14 +1,13 @@
 ﻿using Editor.Drawers.Contexts;
 using Editor.Drawers.Interfaces;
 using Metadata.Models;
-using UnityEditor.UIElements;
-using UnityEngine.UIElements;
 
 namespace Editor.Drawers.BuiltIn.Layout
 {
     [CustomRavenDrawer(
         typeof(TabMetadata))]
-    public sealed class TabDrawer
+    public sealed class
+        TabDrawer
         : IRavenDrawer
     {
         public RavenDrawerPhase Phase =>
@@ -17,7 +16,7 @@ namespace Editor.Drawers.BuiltIn.Layout
         public RavenDrawerLayer Layer =>
             RavenDrawerLayer.Layout;
 
-        public int Priority => 300;
+        public int Priority => 200;
 
         public bool CanDraw(
             RavenDrawerContext context)
@@ -37,23 +36,22 @@ namespace Editor.Drawers.BuiltIn.Layout
         public void Draw(
             RavenDrawerContext context)
         {
-            foreach (var metadata
-                     in context.Node.Metadata.Metadata)
+            foreach (var metadata in context.Node.Metadata.Metadata)
             {
-                if (metadata
-                    is not TabMetadata tab)
+                if (metadata is not TabMetadata tab)
                 {
                     continue;
                 }
 
-                context.Tabs.Initialize(
-                    context.Root);
-
                 var container =
-                    context.Tabs.GetOrCreateTab(
-                        tab.Name);
+                    context.Tabs
+                        .GetOrCreateTab(
+                            tab.GroupName,
+                            tab.TabName,
+                            context.RenderParent);
 
-                context.Node.Metadata.RenderContainer =
+                context.Node.Metadata
+                        .RenderContainer =
                     container;
             }
         }

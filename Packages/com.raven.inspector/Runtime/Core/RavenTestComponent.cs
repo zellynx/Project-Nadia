@@ -27,15 +27,16 @@ namespace Core
         [FoldoutGroup("Combat")]
         public int Armor;
         
-        [Tab("Stats")]
+        [TabGroup("Stats", "Basic")]
         public int Health;
 
-        [Tab("Stats")]
+        [TabGroup("Stats", "Basic")]
         public int Mana;
 
-        [Tab("Advanced")]
-        public float Speed;
-        
+        [TabGroup("Stats", "Advanced")]
+        public int Speed;
+
+        [TabGroup("Stats", "Advanced")]
         public bool AdvancedMode;
 
         public PlayerStats Stats;
@@ -48,6 +49,9 @@ namespace Core
 
         [EnableIf("AdvancedMode")]
         public List<int> Values;
+        
+        [InlineEditor]
+        public WeaponConfig Weapon;
         
         [Button]
         private void PrintMessage()

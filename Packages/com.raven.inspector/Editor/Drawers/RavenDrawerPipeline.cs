@@ -28,6 +28,8 @@ namespace Editor.Drawers
                 new RavenFoldoutRegistry();
             var dependencies =
                 new RavenDependencyRegistry();
+            var renderStack =
+                new RavenRenderStack(root);
 
             DrawRecursive(
                 node,
@@ -38,7 +40,8 @@ namespace Editor.Drawers
                 horizontalGroups,
                 foldouts,
                 dependencies,
-                target);
+                target,
+                renderStack);
         }
 
         private static void DrawRecursive(
@@ -52,28 +55,24 @@ namespace Editor.Drawers
             RavenFoldoutRegistry
                 foldouts,
             RavenDependencyRegistry dependencies,
-            object target)
+            object target,
+            RavenRenderStack
+                renderStack)
         {
-            var initialRenderParent =
-                node.Parent?.Metadata
-                    ?.RenderContainer
-                ??
-                node.Metadata.RenderContainer
-                ??
-                root;
 
             var context = new RavenDrawerContext
             {
                 Node = node,
                 Root = root,
-                RenderParent = initialRenderParent,
+                RenderParent = renderStack.Current,
                 SerializedObject = serializedObject,
                 Groups = groups,
                 Tabs = tabs,
                 HorizontalGroups = horizontalGroups,
                 Foldouts = foldouts,
                 Dependencies = dependencies,
-                Target = target
+                Target = target,
+                RenderStack = renderStack
             };
 
             var orderedDrawers =
@@ -136,6 +135,16 @@ namespace Editor.Drawers
                 drawer.Draw(context);
             }
 
+            VisualElement previousParent =
+                renderStack.Current;
+
+            VisualElement childParent =
+                node.Metadata.RenderContainer
+                ??
+                previousParent;
+
+            renderStack.Push(childParent);
+
             foreach (var child in node.Children)
             {
                 DrawRecursive(
@@ -147,8 +156,12 @@ namespace Editor.Drawers
                     horizontalGroups,
                     foldouts,
                     dependencies,
-                    target);
+                    target,
+                    renderStack
+                    );
             }
+
+            renderStack.Pop();
         }
     }
 }

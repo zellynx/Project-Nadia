@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Editor.State;
 using UnityEngine.UIElements;
 
 namespace Editor.Layout
@@ -24,12 +25,27 @@ namespace Editor.Layout
                 return existing;
             }
 
+            string stateKey =
+                $"RavenFoldout.{name}";
+
             var foldout =
                 new Foldout
                 {
                     text = name,
-                    value = true
+                    value =
+                        RavenPersistentState
+                            .GetBool(
+                                stateKey,
+                                true)
                 };
+            
+            foldout.RegisterValueChangedCallback(
+                evt =>
+                {
+                    RavenPersistentState.SetBool(
+                        stateKey,
+                        evt.newValue);
+                });
 
             root.Add(foldout);
 

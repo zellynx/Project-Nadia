@@ -14,9 +14,10 @@ namespace Editor.Resolvers
                 new ReadOnlyAttributeResolver(),
                 new EnableIfAttributeResolver(),
                 new ValidateInputAttributeResolver(),
-                new TabAttributeResolver(),
+                new TabGroupAttributeResolver(),
                 new HorizontalGroupAttributeResolver(),
-                new FoldoutGroupAttributeResolver()
+                new FoldoutGroupAttributeResolver(),
+                new InlineEditorAttributeResolver(),
             };
     }
 }

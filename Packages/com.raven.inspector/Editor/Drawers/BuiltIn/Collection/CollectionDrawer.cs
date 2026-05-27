@@ -57,9 +57,7 @@ namespace Editor.Drawers.BuiltIn.Collection
 
             context.SerializedObject.Update();
 
-            var property =
-                context.SerializedObject.FindProperty(
-                    context.Node.Metadata.SerializedPath);
+            var property = context.Property;
 
             if (property == null)
             {
@@ -99,11 +97,7 @@ namespace Editor.Drawers.BuiltIn.Collection
                         context.SerializedObject
                             .Update();
 
-                        var refreshed =
-                            context.SerializedObject
-                                .FindProperty(
-                                    context.Node.Metadata
-                                        .SerializedPath);
+                        var refreshed = context.Property;
 
                         refreshed
                             .DeleteArrayElementAtIndex(
@@ -133,11 +127,7 @@ namespace Editor.Drawers.BuiltIn.Collection
                     context.SerializedObject
                         .Update();
 
-                    var refreshed =
-                        context.SerializedObject
-                            .FindProperty(
-                                context.Node.Metadata
-                                    .SerializedPath);
+                    var refreshed = context.Property;
 
                     refreshed.arraySize++;
 

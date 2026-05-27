@@ -13,6 +13,7 @@ namespace Metadata.Models
         public string SerializedPath;
 
         public Type PropertyType;
+        public string PropertyPath;
 
         public FieldInfo FieldInfo;
         public MethodInfo MethodInfo;

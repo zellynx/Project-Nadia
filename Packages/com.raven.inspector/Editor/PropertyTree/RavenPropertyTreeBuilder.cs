@@ -20,7 +20,8 @@ namespace Editor.PropertyTree
                     Name = type.Name,
                     Path = type.Name,
                     SerializedPath = "",
-                    PropertyType = type
+                    PropertyType = type,
+                    PropertyPath = serializedProperty.propertyPath
                 }
             };
 

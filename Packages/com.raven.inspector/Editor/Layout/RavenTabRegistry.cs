@@ -1,92 +1,138 @@
 ﻿using System.Collections.Generic;
-using UnityEditor.UIElements;
+using Editor.State;
 using UnityEngine.UIElements;
 
 namespace Editor.Layout
 {
-    public sealed class RavenTabRegistry
+    public sealed class
+        RavenTabRegistry
     {
-        private readonly
-            Dictionary<string,
-                VisualElement>
-                    _tabs =
-                        new();
-
-        private Toolbar _toolbar;
-
-        private VisualElement _root;
-
-        private VisualElement _contentRoot;
-
-        public void Initialize(
-            VisualElement parent)
+        private sealed class
+            TabGroup
         {
-            if (_root != null)
-            {
-                return;
-            }
+            public VisualElement
+                Root;
 
-            _root =
-                new VisualElement();
+            public VisualElement
+                ButtonRow;
 
-            _toolbar =
-                new Toolbar();
+            public List<VisualElement>
+                Containers =
+                    new();
 
-            _contentRoot =
-                new VisualElement();
+            public List<Button>
+                Buttons =
+                    new();
 
-            _root.Add(_toolbar);
+            public Dictionary<string,
+                    VisualElement>
+                Tabs =
+                    new();
 
-            _root.Add(_contentRoot);
-
-            parent.Add(_root);
+            public int
+                SelectedIndex;
         }
 
-        public VisualElement GetOrCreateTab(
-            string name)
-        {
-            if (_tabs.TryGetValue(
-                    name,
-                    out var existing))
-            {
+        private readonly
+            Dictionary<string,
+                TabGroup>
+            _groups =
+                new();
+
+        public VisualElement
+            GetOrCreateTab(
+                string groupName,
+                string tabName,
+                VisualElement root) {
+            if (!_groups.TryGetValue(
+                    groupName,
+                    out var group)) {
+                string stateKey =
+                    $"RavenTab.{groupName}";
+
+                group =
+                    new TabGroup {
+                        Root =
+                            new VisualElement(),
+
+                        ButtonRow =
+                            new VisualElement(),
+
+                        SelectedIndex =
+                            RavenPersistentState
+                                .GetInt(
+                                    stateKey,
+                                    0)
+                    };
+
+                group.ButtonRow.style.flexDirection =
+                    FlexDirection.Row;
+
+                group.Root.Add(
+                    group.ButtonRow);
+
+                root.Add(group.Root);
+
+                _groups[groupName] =
+                    group;
+            }
+
+            if (group.Tabs.TryGetValue(
+                    tabName,
+                    out var existing)) {
                 return existing;
             }
 
-            var content =
+            int tabIndex =
+                group.Containers.Count;
+
+            var container =
                 new VisualElement();
 
-            content.style.display =
-                _tabs.Count == 0
+            container.style.display =
+                tabIndex ==
+                group.SelectedIndex
                     ? DisplayStyle.Flex
                     : DisplayStyle.None;
 
-            _contentRoot.Add(content);
-
-            var captured =
-                content;
-
             var button =
-                new ToolbarButton(() =>
-                {
-                    foreach (var pair
-                             in _tabs)
-                    {
-                        pair.Value.style.display =
-                            DisplayStyle.None;
+                new Button(() => {
+                    group.SelectedIndex =
+                        tabIndex;
+
+                    string stateKey =
+                        $"RavenTab.{groupName}";
+
+                    RavenPersistentState
+                        .SetInt(
+                            stateKey,
+                            tabIndex);
+
+                    for (int i = 0;
+                         i < group.Containers.Count;
+                         i++) {
+                        group.Containers[i]
+                                .style.display =
+                            i == tabIndex
+                                ? DisplayStyle.Flex
+                                : DisplayStyle.None;
                     }
+                });
 
-                    captured.style.display =
-                        DisplayStyle.Flex;
-                })
-                {
-                    text = name
-                };
+            button.text = tabName;
 
-            _toolbar.Add(button);
+            group.ButtonRow.Add(button);
 
-            _tabs[name] = content;
+            group.Root.Add(container);
 
-            return content;
+            group.Buttons.Add(button);
+
+            group.Containers.Add(container);
+
+            group.Tabs[tabName] =
+                container;
+
+            return container;
         }
     }
 }

@@ -30,5 +30,10 @@ namespace Editor.Drawers.Contexts
         public RavenDependencyRegistry Dependencies;
 
         public object Target;
+        
+        public RavenRenderStack RenderStack;
+        
+        public SerializedProperty Property => SerializedObject.FindProperty(
+                Node.Metadata.PropertyPath);
     }
 }

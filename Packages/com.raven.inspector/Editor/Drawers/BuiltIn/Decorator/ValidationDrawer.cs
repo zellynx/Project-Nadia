@@ -68,9 +68,7 @@ namespace Editor.Drawers.BuiltIn.Decorator
                         continue;
                     }
 
-                    var property =
-                        context.SerializedObject.FindProperty(
-                            context.Node.Metadata.SerializedPath);
+                    var property = context.Property;
 
                     if (property == null)
                     {

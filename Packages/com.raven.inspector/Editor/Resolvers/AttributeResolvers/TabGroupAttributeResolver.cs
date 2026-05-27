@@ -5,7 +5,8 @@ using Metadata.Models;
 
 namespace Editor.Resolvers.AttributeResolvers
 {
-    public sealed class TabAttributeResolver
+    public sealed class
+        TabGroupAttributeResolver
         : IRavenMetadataResolver
     {
         public void Resolve(
@@ -19,7 +20,7 @@ namespace Editor.Resolvers.AttributeResolvers
 
             var attribute =
                 field.GetCustomAttribute<
-                    TabAttribute>();
+                    TabGroupAttribute>();
 
             if (attribute == null)
             {
@@ -29,8 +30,11 @@ namespace Editor.Resolvers.AttributeResolvers
             metadata.Metadata.Add(
                 new TabMetadata
                 {
-                    Name =
-                        attribute.Name
+                    GroupName =
+                        attribute.GroupName,
+
+                    TabName =
+                        attribute.TabName
                 });
         }
     }

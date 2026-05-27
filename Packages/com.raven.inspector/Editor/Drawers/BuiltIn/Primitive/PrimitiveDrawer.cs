@@ -52,8 +52,7 @@ namespace Editor.Drawers.BuiltIn.Primitive
             }
 
             var property =
-                context.SerializedObject.FindProperty(
-                    context.Node.Metadata.SerializedPath);
+                context.Property;
 
             if (property == null)
             {

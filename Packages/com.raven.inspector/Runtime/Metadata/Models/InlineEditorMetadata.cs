@@ -3,13 +3,8 @@
 namespace Metadata.Models
 {
     public sealed class
-        TabMetadata
+        InlineEditorMetadata
         : IRavenMetadata
     {
-        public string
-            GroupName;
-
-        public string
-            TabName;
     }
 }
